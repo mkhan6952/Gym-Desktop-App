@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 60px;
+  z-index: 99999;
+}
+.footer > img {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+.footer > hr {
+  border: 1px solid var(--lightgray);
+}
+.logo-f {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  z-index: 99999;
+}
+@media screen and (max-width: 768px) {
+  .logo-f > img {
+    width: 10rem;
+  }
+}

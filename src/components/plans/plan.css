@@ -1,0 +1,101 @@
+.plansection {
+  margin-top: -350px;
+}
+.plan-header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.pricecard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 15rem;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-content: space-around;
+  background-color: var(--caloryCard);
+}
+.card:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features > div {
+  display: flex;
+  align-items: center;
+}
+.card > span > svg {
+  fill: white;
+  height: 3rem;
+  width: 3rem;
+}
+
+.card > span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card > span:nth-child(3) {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.features img {
+  width: 1rem;
+  color: white;
+  padding-right: 8px;
+}
+.seemore {
+  font-size: 0.8rem;
+}
+.plan-blur-1 {
+  width: 34rem;
+  height: 25rem;
+  /* top: 6rem; */
+  left: 0rem;
+}
+.plan-blur-2 {
+  width: 34rem;
+  height: 25rem;
+  /* top: 5rem; */
+  right: 0rem;
+}
+@media screen and (max-width: 768px) {
+  .plan-header {
+    padding-top: 300px;
+    font-size: x-large;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .pricecard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .card {
+    width: 12rem;
+  }
+}
